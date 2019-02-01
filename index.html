@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* reset css  */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* reset css end */
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 40px 16px;
+  font-size: 17px;
+  width: 25%;
+  /* border-radius: 20px 20px 0px 0px; */
+}
+
+.tablink:hover {
+  /* background-color: #777; */
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  /* margin-top: 10em; */
+  padding: 100px 0px;
+  height: 100%;
+}
+
+#Home {background-color:white;}
+#News {background-color: white;}
+#Contact {background-color: white;}
+#About {background-color: white;}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-auto-rows: 2fr; */
+}
+
+.wrapper > div{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.wrapper > div > h1{
+    color: black;
+    border-bottom: 10px solid orangered;
+    background-color: aquamarine;
+    width: 150px;
+    padding: 2px;
+    margin: 10px auto;
+    /* font-size: 2rem; */
+}
+
+.top{
+    height: 200px;
+    padding: 50px 120px;
+    background-color:orange;
+}
+.top div{
+    border: 1px solid black;
+    width: 1000px;
+    height: 100px;
+    /* margin: 500px 500px; */
+}
+
+img{
+    width: 90%;
+    /* padding: auto; */
+}
+
+.bottom{
+    margin-top: 40px;
+    border: 1px solid black;
+    height: 500px;
+    background-color: powderblue;
+}
+
+</style>
+</head>
+<body>
+<div class="top">
+    <div>brand</div>
+</div>
+
+<button class="tablink" onclick="openPage('Home', this, 'white')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'white')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Contact', this, 'white')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'white')">About</button>
+
+<div id="Home" class="tabcontent">
+    <div class="wrapper">
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+    </div>  
+</div>
+
+<div id="News" class="tabcontent">
+    <div class="wrapper">
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+        <div>
+            <img src="./prod_201311271046366080.png" alt="">
+            <h1>불고기 와퍼세트</h1>
+        </div>
+    </div>  
+</div>
+
+<div id="Contact" class="tabcontent">
+        <div class="wrapper">
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+        </div>  
+</div>
+
+<div id="About" class="tabcontent">
+    <div class="wrapper">
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+            <div>
+                <img src="./prod_201311271046366080.png" alt="">
+                <h1>불고기 와퍼세트</h1>
+            </div>
+        </div>  
+</div>
+
+<div class="bottom">
+    결제
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
